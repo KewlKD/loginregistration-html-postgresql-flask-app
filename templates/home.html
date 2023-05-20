@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+  
+{% block title %}Home{% endblock %}
+  
+{% block content %}
+<div class="home">
+<h1 class="h2">Dashboard</h1>
+<p>Welcome back, {{ username }}!</p>
+<a href="{{ url_for('logout') }}" class="btn btn-dark ">Logout</a></p>
+{% endblock %}
